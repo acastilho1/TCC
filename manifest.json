@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Substituidor de palavras ofensivas",
+    "version": "1.0",
+    "description": "Substitui palavras ofensivas por sinonimos neutros",
+    "permissions" : ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["contentScript.js"]
+      }
+    ]
+   
+  }
+  
